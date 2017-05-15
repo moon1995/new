@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/react.js"></script>
+	<script type="text/javascript" src="js/react-dom.js"></script>
+	<script type="text/javascript" src="js/browser.min.js">
+	</script>
+	<script type="text/babel">
+	class HelloComponent extends React.Component{
+	constructor(){
+	super();
+	this.state={
+	x:""
+	};
+	this.handleChange = this.handleChange.bind(this);
+	//第三个this代表新new出来的HelloComponent
+		
+	}
+	handleChange(e){
+	this.setState({//this代表新new出来的elloComponent
+	x:e.target.value
+	})
+	}
+	render(){
+	return <div>
+<input type="text" ref="myInput" onChange={this.handleChange} />
+<span >{this.state.x}
+</span>
+	</div>
+	}
+	}
+	ReactDOM.render(
+	<HelloComponent />,//===>new HelloComponent();
+	document.getElementById("div1")
+	);
+		</script>
+
+	</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#container{
+			margin:0 auto;
+			width:450px;
+			height:300px;
+		}
+		span{
+			float:left;
+			width:20px;
+			height:20px;
+			margin-left:20px;
+			border-radius: 20px;
+			background:#f90;
+		}
+		#span1{
+			background:#090;
+		}
+		#div2{
+			background:#000;
+			clear:both;}
+			#div2 span{
+				background:#f90;
+				width:20px;
+				height:20px;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var $=function(id){
+				return document.getElementById(id);
+			}
+			var container=$("container");
+			var img=document.getElementsByTagName("img")[0];
+			var spans=container.getElementsByTagName("span");
+			var left=$("left");
+			var right=$("right");
+			var a=document.getElementsByTagName("a")[0];
+			var Index;
+			for(var i=0;i<spans.length;i++){
+					spans[i].index=i;
+					spans[i].onclick=function(){
+						for(var j=0;j<spans.length;j++){
+							spans[j].style.background="#f90";
+							}
+							Index=this.index;
+							this.style.background="#090";
+							img.src="img/"+(this.index+1)+".jpg";
+							a.href=(this.index+1)+".html";
+							}
+						}
+					var k=1;
+					var timer=setInterval(function(){
+						if(Index!=undefined){
+							k=Index;
+							Index=undefined;
+						}
+						if(k>=4){
+							k=0;
+							}
+							for(var m=0;m<spans.length;m++){
+							spans[m].style.background="#f90";
+					}
+					spans[k].style.background="#090";
+						img.src="img/"+(k+1)+".jpg";
+					k++;
+					},2000);
+				
+					}
+		
+		
+	</script>
+</head>
+<body>
+	<div id="container">
+	<a href="1.html" >
+	<img src="img/1.jpg" />
+	</a>
+		<span id="span1">1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+			</div>
+        <div id="div2">
+        <span id="left"><</span>
+        <span id="right">></span>
+        </div>
+</body>
+</html>

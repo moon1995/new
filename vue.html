@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="js/vue.js" ></script>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+window.onload=function(){
+	var $=function(id){
+		return document.getElementById(id);
+		}
+		var table=document.getElementsByName("table");
+		var str=[];
+		var username=$("username");
+		var pwd=$("pwd");
+		var qd=$("qd");
+		var Reset=$("reset");
+		var btn="<button value='删除'></button>";
+		qd.onclick=function(){
+			var k=0;
+			k++;
+			var uv=username.value;
+			var pv=pwd.value;
+			str.push([username.value,pwd.value,btn]);
+				alert(str[0][0]);
+			var ff=document.createDocumentFragment();
+			var tr=document.createElement("tr");
+			table.appendChild(tr);
+			
+			for(var i=0;i<3;i++){
+			var td=document.createElement("td");
+			tr.appendChild(td);
+			td.innerHTML=str[k][i];
+			}
+			}
+	}
+</script>
+
+</head>
+<div id="container">
+<div>
+<label>用户名：</label>
+<input type="text" id="username" /><br>
+<label>密码 : </label>
+<input type="text" id="pwd" /><br>
+<input type="submit" value="确定" id="qd"/>
+<input type="submit" value="重置" id="reset"/>
+</div>
+<div>
+<table border="1" >
+<caption>用户记录表</caption>
+<tr >
+<td>序号</td>
+<td>用户名</td>
+<td>密码</td>
+<td>操作</td>
+</tr>
+<tr>
+<td>1</td>
+<td>tom</td>
+<td>123</td>
+<td >删除</td>
+</tr>
+<tr>
+<td  colspan="4">暂无数据。。。。。</td>
+</tr>
+<tr>
+<td  colspan="4">全部删除</td>
+</tr>
+</table>
+</div>
+</div>
+
+<body>
+</body>
+</html>

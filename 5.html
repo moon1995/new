@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript" >
+window.onload=function(){
+	var temp;
+	var str=[1,5,89,6,8,5,12,3,99,88,55,6,5,2,4,1,2,5,5,3,35,26,5,2,4,65,56,88,99,565,566,2335,5889,233,656,565,66653,3335,68,66];
+	for(var i=0;i<str.length;i++){
+			for(var j=0;j<str.length-1;j++){
+					if(str[j]<str[j+1]){
+						temp=str[j];
+						str[j]=str[j+1];
+						str[j+1]=temp;
+
+					}
+
+			}
+	}
+	alert(str);
+
+}
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" >
+window.onload=function(){
+	var div1=document.getElementById("div1");
+	function show(){
+		var myDate=new Date();
+		div1.innerHTML=myDate.toLocaleString();
+		setTimeout(show,1000);
+		}
+		show();
+		(function(name){
+			alert("你好 !"+name);})("tom");
+	}
+
+</script>
+</head>
+
+<body>
+<div id="div1"></div>
+</body>
+</html>
