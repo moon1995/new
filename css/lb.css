@@ -1,0 +1,54 @@
+/* CSS Document */
+body,p{
+	margin:0;
+	padding:0;}
+#img{
+	width:689px;
+	height:305px;
+	overflow:hidden;
+}
+img{
+	float:left;
+	width:689px;
+	height:305px;
+	}
+#hh{
+		position:absolute;
+		left:500px;
+		top:280px;
+		}
+span{
+		background:rgba(255,153,0,0.5);
+		margin-right:30px;
+		display:inline-block;
+		width:20px;
+		height:20px;
+		clear:both;
+		border-radius:20px;
+		}
+		.left{
+					margin-right:630px;}
+		.left,.right{
+			background-color: rgba(0,0,0,0.3);
+			float:left;
+			color:#000;
+			width:30px;
+			height:100px;
+			cursor:pointer;
+			line-height:100px;
+			color:#fff;
+			font-size:32px;
+			-ms-user-select:none;
+			-moz-user-select:none;
+			-webkit-user-select:none;
+			user-select:none;
+			}
+			#point{
+				position:absolute;
+				left:0px;
+				top:80px;}
+		.sel{
+			background:rgba(102,102,255,0.3);
+			color:#fff;}
+.container{
+		position:relative;}

@@ -2,111 +2,28 @@
 <html>
 <head>
 <meta charset="utf-8">
-<style>
-#img{
-	width:150px;
-	height:100px;
-}
-img{
-	float:left;
-	width:150px;
-	}
-	span{
-		background:#d90;
-		display:inline-block;
-		width:20px;
-		height:20px;
-		clear:both;
-		
-		}
-		.left,.right{
-			background-color: rgba(0,0,0,0.2);
-			float:left;
-			color:#000;
-			width:20px;
-			margin-right:150px;
-			}
-			#point{
-				position:absolute;
-				left:250px;
-				top:50px;}
-		.sel{
-			background:#090;
-			color:#fff;}
-		.container{
-		margin:0 auto;
-		width:200px;
-		}
-		
-</style>
+<link rel="stylesheet" href="css/lb.css" />
 <title>无标题文档</title>
 <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
-<script type="text/javascript">
-$(function(){
-	var cur=0;
-	var img=$("img");
-	var span=$("span");
-	img.eq(0).fadeIn();
-	play();
-	var auto;
-	span.hover(function(){
-		 clearTimeout(auto);
-		$(this).addClass("sel").siblings().removeClass("sel");
-		var index=$(this).index();
-		img.eq(index).fadeIn(400).siblings().hide();
-			},function(){
-				var index=$(this).index()+1;
-				cur=index;
-				
-				 auto = setTimeout(play,3000);
-				
-				});
-		function play(){
-			span.eq(cur).addClass("sel").siblings().removeClass("sel");
-			img.eq(cur).fadeIn(400).siblings().hide();
-			cur++;
-			    cur = cur >= span.length ? 0:cur;		//true则执行冒号前的语句，flase则执行冒号后的语句
-                auto = setTimeout(play,3000);
-			};
-			$(".right").click(function(){
-				clearTimeout(auto);
-			
-		
-				span.eq(cur).addClass("sel").siblings().removeClass("sel");
-			img.eq(cur).fadeIn(400).siblings().hide();
-			cur++;
-			    cur = cur >= span.length ? 0:cur;		
-              auto = setTimeout(play,1000);
-			   });
-			   $(".left").click(function(){
-				clearTimeout(auto);
-				cur--;
- 				cur = cur <= 0 ? 4:cur;
- 	
-				span.eq(cur-1).addClass("sel").siblings().removeClass("sel");
-			img.eq(cur-1).fadeIn(400).siblings().hide();
-              auto = setTimeout(play,3000);
-			   });
-				});
-</script>
+<script type="text/javascript" src="js/lb.js"></script>
 </head>
 
 <body>
 <div class="container">
 <div id="img">
-<img src="img/1.jpg" />
-<img src="img/2.jpg" />
-<img src="img/3.jpg" />
-<img src="img/4.jpg" /></div>
-<div id="hh">
-<span>1</span>
-<span>2</span>
-<span>3</span>
-<span>4</span>
-<div id="point">
-<div class="left"><p><</p></div>
-<div class="right"><p>></p></div>
+<img src="img/5.png" />
+<img src="img/6.jpg" />
+<img src="img/7.png" />
 </div>
+<div>
+<div id="hh">
+<span></span>
+<span></span>
+<span></span></div>
+<div id="point">
+<div class="left"><</div>
+<div class="right">></div>
+<div>
 </div>
 </div>
 </body>
