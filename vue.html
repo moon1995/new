@@ -4,75 +4,122 @@
 <meta charset="utf-8">
 <title>无标题文档</title>
 <script type="text/javascript" src="js/vue.js" ></script>
-<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>-->
+
 <script>
 window.onload=function(){
-	var $=function(id){
-		return document.getElementById(id);
+	new Vue({
+		el:'#box', //选择器
+		data:{//数据
+			a:true,
+			message:'hello',
+			arr:["apple","orange","pear"],
+			json:{"a":"apple","b":"orange","c":"pear"}
+		},
+		methods:{
+			show:function(){
+				this.arr.push("tomato");
+			}
 		}
-		var table=document.getElementsByName("table");
-		var str=[];
-		var username=$("username");
-		var pwd=$("pwd");
-		var qd=$("qd");
-		var Reset=$("reset");
-		var btn="<button value='删除'></button>";
-		qd.onclick=function(){
-			var k=0;
-			k++;
-			var uv=username.value;
-			var pv=pwd.value;
-			str.push([username.value,pwd.value,btn]);
-				alert(str[0][0]);
-			var ff=document.createDocumentFragment();
-			var tr=document.createElement("tr");
-			table.appendChild(tr);
-			
-			for(var i=0;i<3;i++){
-			var td=document.createElement("td");
-			tr.appendChild(td);
-			td.innerHTML=str[k][i];
-			}
-			}
-	}
+	});
+}
 </script>
 
 </head>
+<body>
+
+<div id="box">{{message}}</br>
+<input type="text" v-model="message" />
+<ul>
+	<li v-for="value in arr">
+		{{value}}  {{$index}}
+	</li>
+
+</ul>
+<input type="button" value="按钮" v-on:click="a=false">
+<div v-show="a" class="div1" style="width:200px;height:200px;background:#f00">
+<ul>
+	<li v-for="value in json">
+		{{value}} {{$index}} {{$key}}
+	</li>
+</ul>
+</div>
+
+</div>
 <div id="container">
 <div>
 <label>用户名：</label>
-<input type="text" id="username" /><br>
+<input type="text" id="username"><br>
 <label>密码 : </label>
 <input type="text" id="pwd" /><br>
 <input type="submit" value="确定" id="qd"/>
 <input type="submit" value="重置" id="reset"/>
 </div>
 <div>
-<table border="1" >
+<table border="1" id="table">
 <caption>用户记录表</caption>
-<tr >
+<tr>
 <td>序号</td>
 <td>用户名</td>
 <td>密码</td>
 <td>操作</td>
 </tr>
-<tr>
-<td>1</td>
-<td>tom</td>
-<td>123</td>
-<td >删除</td>
+
+<tr id="zwsj">
+<td  colspan="4" >暂无数据。。。。。</td>
 </tr>
 <tr>
-<td  colspan="4">暂无数据。。。。。</td>
-</tr>
-<tr>
-<td  colspan="4">全部删除</td>
+<td  colspan="4" id="tr">全部删除</td>
 </tr>
 </table>
-</div>
-</div>
+</div</div>
 
-<body>
+<script>/*
+function show(){
+	var $=function(id){
+		return document.getElementById(id);
+		}
+		var table=$("table");
+		var tr=$("tr");
+		var zwsj=$("zwsj");
+		var str=[];
+		var username=$("username");
+		var pwd=$("pwd");
+		var qd=$("qd");
+		var Reset=$("reset");
+			var index;
+		var btn="<input type='submit' value='删除' class='delete'/>";
+		var delete1=document.getElementsByClassName("delete");
+		var k=0;
+		Reset.onclick=function(){
+				username.value="";
+				pwd.value="";
+				}
+		qd.onclick=function(){
+			k++;
+		 index="<td>"+k+"</td>";
+			 index+="<td>"+username.value+"</td>";
+			index+="<td>"+pwd.value+"</td>";
+			index+="<td>"+btn+"</td>";
+			var str1=document.createElement("tr");
+			str1.innerHTML=index;
+			str.push(index);
+			table.appendChild(tr);
+			table.insertBefore(str1,tr);
+			if(str.length>=0){
+				zwsj.style.display="none";
+				}else{
+					zwsj.style.display="table";}
+				//删除
+			for(var i in delete1){
+			delete1[i].onclick=function(e){
+				this.parentNode.parentNode.remove();
+				}
+			}
+			}
+	}
+show();*/
+</script>
 </body>
 </html>
