@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>智能社——http://www.zhinengshe.com</title>
+    <title>留言板-vue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -103,8 +103,9 @@
                         <h4 class="modal-title">{{info}}</h4>
                     </div>
                     <div class="modal-body text-right">
+                                            <button data-dismiss="modal" class="btn btn-danger btn-sm" v-on:click="deleteMsg(nowIndex)">确认</button>
                         <button data-dismiss="modal" class="btn btn-primary btn-sm">取消</button>
-                        <button data-dismiss="modal" class="btn btn-danger btn-sm" v-on:click="deleteMsg(nowIndex)">确认</button>
+
                     </div>
                 </div>
             </div>
