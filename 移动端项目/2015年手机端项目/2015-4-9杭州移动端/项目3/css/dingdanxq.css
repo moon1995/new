@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{background: #F2F3F2}
+.container{padding-bottom: 50px;}
+.container h1{font-size: 18px;color: #393939;text-align: center;padding: 10px 0;background: #fff;
+	margin-bottom: 10px;}
+
+
+.details{width: 100%;overflow: hidden; }
+.details li{margin-bottom: 10px;border-bottom: 1px solid #ccc;overflow: hidden;padding: 10px 0;}
+.details_txt{float: left;width: 65%}
+.details_txt p:nth-of-type(1){font-size: 16px;}
+.details_txt p:nth-of-type(1) span{font-size: 14px;color: #666;}
+.details_txt p:nth-of-type(2){font-size: 14px;color: #b72721;}
+.details_cou{float: right;overflow: hidden;width: 32%;}
+
+
+.add_bg,.cut_bg{width: 30px;height: 30px;border:2px solid #A8A8A8;border-radius: 50px;}
+.rank,.cut_line{width: 14px;height:2px;margin:14px 0 13px 8px;background: #a8a8a8;}
+.rank_ver{width: 2px;height:14px;background: #a8a8a8;margin: -21px 0 0 14px;}
+.add_bg,.cut_bg,.count{float: left;}
+.count{margin: 6px;font-size: 14px;}
+
+
+.dingdan_content{width: 88%;overflow: hidden;margin: 0 auto;background: #fff;padding: 3%;border-radius: 8px;}
+.left_dan,.right_dan{clear: both;}
+.left_dan{font-size: 16px;color: #666}
+.right_dan{text-align: right;font-size: 14px;color: #b72721}
+
+
+.checked{display: inline-block;width: 15px;height: 15px;background: url(../images/check.png) no-repeat;
+	background-size: 100% 100%;margin-top: 15px;}
+div.checkedAdd{background: url(../images/checked.png) no-repeat;background-size: 100% 100%;}
+.quan{display: inline-block;width: 85%;font-size: 16px;padding-left: 10px;margin-top: -5px;}
+
+.xianzhi{width: 100%;text-align: center;padding: 15px 0;color: #666;font-size: 14px;}
+
+
+.footer_bntton{position: fixed;bottom: 0;margin: 0 auto;width: 100%;padding: 8px 0 8px 2%;background: #fff;}
+.footer_bntton div{display: inline-block;}
+.footer_bntton div button{border-radius: 5px;padding: 8px 0;font-size: 16px;border: none;outline: none;}
+.left_button{width: 36%;}
+.right_button{width: 56%;margin-left: 2%;}
+.left_button button{width: 100%;background: #D8D8D8;color: #333;}
+.right_button button{width: 100%;background: #b72721;color: #fff;}
+

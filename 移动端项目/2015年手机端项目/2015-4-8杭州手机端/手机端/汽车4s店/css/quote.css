@@ -1,0 +1,40 @@
+/* CSS Document */
+body{   
+    font-family: "微软雅黑",Helvetica,"黑体",Arial,Tahoma;
+    font-size: 14px;   
+    padding:0px;
+	margin:0px 0px 2px 0px;
+	background-color:#f9f5f5;
+	x-overflow:hidden;
+	y-overflow:auto;
+	}
+#container{
+    max-width:640px;
+	margin:0px auto;
+	min-height:100%;	
+	y-overflow:auto;		
+	}
+#footer{
+    margin-top:-7px;
+	}
+
+#f_2{	
+	text-align:center;
+	color:#666;
+	font-size:13px;border:1px solid #f9f5f5;max-width:640px;margin-bottom:58px;
+	}
+#f_2 p{
+    line-height:10px;	
+	}		
+#f_3{
+    height:55px;
+	background:#66b0dd;position:fixed;bottom:0px;max-width:640px;width:100%;z-index:1;
+	}			
+.f_3_div{
+     float:left;text-align:center;margin-top:6px;width:33%;
+	}
+.f_3_div a{text-decoration:none;}	
+.f_miaoshu{
+     font-size:12px;margin-top:4px;color:#fff;	
+	}							
+		

@@ -1,0 +1,16 @@
+/* CSS Document */
+#header{height:57px;text-align:center;position:relative;background:#fff;}
+.login{color:#66b0dd;font-size:20px;padding-top:15px;}
+#header img{width:25px;position:absolute;margin:-24px 0px 0px 0px;left:30px;}
+#main{text-align:center;position:relative;background:#fff;margin-top:6px;padding-top:20px;padding-bottom:40px;}
+.account{background:url(../images/userName.png) no-repeat 4px 8px;width:83%; height:32px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 10px auto;color:#666;padding-left:25px;}
+.password{background:url(../images/secret.png) no-repeat 7px 8px;width:83%; height:32px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 14px auto;color:#666;padding-left:25px;}
+.d_password{background:url(../images/secret.png) no-repeat 7px 8px;width:83%; height:32px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 14px auto;color:#666;padding-left:25px;}
+.telephone{background:url(../images/telephone.png) no-repeat 4px 8px;width:83%; height:32px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 10px auto;color:#666;padding-left:25px;}
+.user{background:url(../images/userName.png) no-repeat 4px 8px;width:83%; height:32px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 10px auto;color:#666;padding-left:25px;}
+.email{background:url(../images/email.png) no-repeat 4px 6px;width:83%; height:32px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 10px auto;color:#666;padding-left:25px;}
+.message{background:url(../images/message.png) no-repeat 4px 6px;width:83%; height:86px;font-size: 14px;border: 1px solid #ccc;border-radius:3px;margin:0px auto 10px auto;color:#666;padding-left:25px;}
+.remember{color:#666;margin-left:12px;}
+.d_icon{position:relative;}
+.icon{color:red;position:absolute;top:10px;}
+#footer{margin-top:6px;}

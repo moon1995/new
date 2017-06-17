@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>公安点餐系统</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.forget').click(function() {
+				$('.container .zhuce_hidden').show(0);
+				$('.big_bg').show(0);
+			});
+			$('.zhuce_btn02').click(function() {
+				$('.container .zhuce_hidden').hide(0);
+				$('.big_bg').hide(0);
+			});
+				
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<p class="base_head"><a href="#"><img src="images/fanhui.png" alt=""></a></p>
+		<form action="">
+		<ul class="zhuce_box">
+			<li>
+				<div class="ico">
+					<img src="images/ico3.png" alt="">
+				</div>
+				<div class="zhuce_txt">
+					<input type="text" placeholder="请输入手机号或邮箱" value="">
+				</div>
+			</li>
+			<li>
+				<div class="ico">
+					<img src="images/ico2.png" alt="">
+				</div>
+				<div class="zhuce_txt">
+					<input type="text" placeholder="输入密码" value="">
+				</div>
+			</li>
+		</ul>
+		</form>
+		<div class="zhuce_btn">
+			<button>取消</button>
+			<button>登录</button>
+		</div>
+		<p class="footer">
+			<span>还没有账号？</span>
+			<a href="zhuce.html">注册新账号</a> |
+			<a href="javascript:void(0)" class="forget">忘记密码</a>
+		</p>
+		<div class="big_bg"></div>
+		<ul class="zhuce_box zhuce_hidden" style="padding-top:30px;">
+			<li>
+				<div class="ico">
+					<img src="images/ico1.png" alt="">
+				</div>
+				<div class="zhuce_txt zhuce_yzm">
+					<input type="text" class="phone" value="请输入您的手机号">
+				</div>
+				<div class="gain">
+					<button>发送验证码</button>
+				</div>
+			</li>
+			<li>
+				<div class="ico">
+					<img src="images/ico3.png" alt="">
+				</div>
+				<div class="zhuce_txt">
+					<input type="text" value="请输入验证码">
+				</div>
+			</li>
+			<li>
+				<div class="ico">
+					<img src="images/ico3.png" alt="">
+				</div>
+				<div class="zhuce_txt">
+					<input type="text" value="请输入密码">
+				</div>
+			</li>
+			<li>
+				<div class="ico">
+					<img src="images/ico2.png" alt="">
+				</div>
+				<div class="zhuce_txt">
+					<input type="text" value="请再次输入密码">
+				</div>
+			</li>
+			<div class="zhuce_btn zhuce_btn02">
+				<button>取消</button>
+				<button>确定</button>
+			</div>
+		</ul>
+	</div>
+</body>
+</html>

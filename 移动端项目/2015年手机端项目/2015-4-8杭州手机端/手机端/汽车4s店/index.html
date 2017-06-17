@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>汽车4s店主页</title>
+<style>
+	
+	@media screen and (min-width: 500px) {
+		#container .carDiv{width: 30%;margin:5px 1.5%}
+	}
+	@media only screen and (min-width: 340px) and (max-width: 499px){
+		#container .carDiv{width: 45%;margin:5px 2.5%}
+	}
+	@media only screen and (max-width: 339px) {
+		#container .carDiv{width: 90%;margin:5px 5%}
+	}
+	.carDiv{
+		float:left;
+		text-align:center;
+	}
+	.carDiv img{
+		width:100%
+	}
+	.carDiv .carName{
+		margin:0px 8px;
+		color: #06f;
+		text-align:left;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.carDiv .oldPrice{
+		color: #9d9d9d;
+		text-align:left;
+		margin:0px 8px;
+	}
+	.carDiv .nowPrice{
+		color: #9d9d9d;
+		text-align:left;
+		margin:0px 8px;
+	}
+	.carDiv .oldPrice span{
+		text-decoration: line-through;
+	}
+	.carDiv .nowPrice span{
+		color: #961313;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.newsName{
+		width:80%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		overflow: hidden;
+		display:inline-block;
+		height:40px;   
+        line-height:40px;  
+	}
+	
+</style>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script>
+
+</script>
+</head>
+
+<body>
+  <div id="container">       
+        <div id="top_header">
+          <div id="banner">
+            <div style="min-width:340px;">北京现代销售服务有限公司</div>
+            <div class="div_2"><img src="images/phone.png"><span>123-456-7890</span></div>
+            <div class="div_3">地址地址地址地址地址地址</div>
+          </div>
+          <div id="t_footer">
+             <div class="login"><a href="#">登陆</a></div>
+             <div class="reg"><a href="#">注册</a></div>
+             <div class="gwc"><a href="#" style="width:70px;padding-left:12px;">购物车</a></div>
+          </div>                  
+          <!--<div id="navigation"> 
+            <div id="navigation_top">
+              <div><a href="index.html"><span><img src="images/left1.png" style="width:20px;"></span><span class="navi_span1">首页</span></a></div>
+              <div><a href="news.html"><span><img src="images/left2.png"></span><span class="navi_span1">新闻中心</span></a></div>
+              <div><a href="#"><span><img src="images/left3.png" style="width:22px;"></span><span class="navi_span1" style="margin-left:13px;">新车商城</span></a></div>
+              <div><a href="#"><span><img src="images/left4.png"></span><span class="navi_span1">售后商城</span></a></div>
+              <div><a href="#"><span><img src="images/left5.png"></span><span class="navi_span1">车主俱乐部商城</span></a></div>
+              <div><a href="#"><span><img src="images/left6.png"></span><span class="navi_span1">精品装潢商城</span></a></div>
+              <div><a href="#"><span><img src="images/left7.png"></span><span class="navi_span1">服务预约/留言</span></a></div>              
+            </div>
+          </div>
+          <div id="globallink">
+            <div id="globallink1">
+              <div id="globallink2"></div>
+            </div>
+          </div>-->
+        </div>
+<!--新闻中心-->           
+     <div id="news">
+        <div id="n_div1">          
+          <div class="xwzx">新闻中心</div>
+          <div class="more"><a href="#">更多</a></div>
+        </div>
+        <div id="n_div2">
+          <div>
+            <img src="images/xin.png">
+            <a href="#" class="newsName">杭州市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询</a>
+          </div>
+           <div>
+            <img src="images/xin.png">
+            <a href="#" class="newsName">杭州市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询</a>
+          </div>
+		   <div style="border-bottom:none;">
+            <img src="images/xin.png">
+            <a href="#" class="newsName">杭州市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询市号结果查询杭州市号结果查询</a>
+          </div>
+        </div>        
+      </div> 
+	  
+	  <!--热卖商品-->
+	  <div id="hot">
+        <div id="h_div1">          
+          <div class="xwzx">热卖商品</div>
+          <div class="more"><a href="#">更多</a></div>
+        </div>
+        <div id="h_div2">
+          <div class="h_div2_1">
+            <div><img src="images/3.jpg"></div>
+            <div  class="miaoshu">
+              <a href="#">
+                <p class="p1">空调系统清凉服务套装</p>
+                <p>产品编号：SH201404001</p>
+                <p>原价：<span class="span1">￥444.00</span></p>
+                <p>商城价：<span class="span2">￥222.00</span></p>
+              </a>  
+            </div>
+          </div>          
+          <div class="h_div2_1">
+            <div><img src="images/12.jpg"></div>
+            <div class="miaoshu">
+              <a href="#">
+                <p class="p1">空调系统清凉服务套装</p>
+                <p>产品编号：SH201404001</p>
+                <p>原价：<span class="span1">￥444.00</span></p>
+                <p>商城价：<span class="span2">￥222.00</span></p>
+              </a>  
+            </div>
+          </div>         
+        </div>        
+      </div>
+	  
+	  
+<!--新车商城-->
+      <div id="xin">
+        <div id="x_div1">          
+          <div class="xwzx">新车商城</div>
+          <div class="more"><a href="#">更多</a></div>
+        </div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div style="clear:both;">
+		</div>
+      </div>
+		
+		
+		<div id="xin">
+        <div id="x_div1">          
+          <div class="xwzx">售后商城</div>
+          <div class="more"><a href="#">更多</a></div>
+        </div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div class="carDiv">
+			<img src="images/che.jpg">
+			<p class="carName" >点卷</p>
+			<p class="oldPrice" >原价：<span class="span1">￥1000</span></p>
+			<p class="nowPrice" >商城价：<span class="span1">￥1000</span></p>
+		</div>
+		<div style="clear:both;">
+		</div>
+      </div>
+ 
+	  
+	  
+	  
+<!--俱乐部商城-->
+      
+      <div id="footer"> 
+         <div style="height:3px;background:#06f;"></div>        
+         <div id="f_2">
+           <p>&copy;2014年 北京现代销售服务有限公司</p>
+           <p>技术支持：<a href="http://www.jingtoo.com/">京图科技</a><a href="#" style="margin-left:15px;">电脑版</a></p>
+         </div>
+         <div id="f_3">
+           <div class="f_3_div">
+             <a href="#">
+               <div><img src="images/01.png" style="width:27px;"></div>
+               <div class="f_miaoshu">电话咨询</div>
+             </a>
+           </div>
+           <div class="f_3_div"> 
+             <a href="#">
+               <div><img src="images/02.png" style="width:27px;"></div>
+               <div class="f_miaoshu">在线地图</div>
+             </a>
+           </div>
+           <div class="f_3_div">
+             <a href="#">
+               <div><img src="images/03.png" style="width:24px;"></div>
+               <div class="f_miaoshu" style="margin-top:7px;">在线留言</div>
+             </a>
+           </div>
+         </div>
+      </div>       
+  </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* CSS Document */
+body{   
+    font-family: "微软雅黑",Helvetica,"黑体",Arial,Tahoma;
+    font-size: 14px;   
+    padding:0px;
+	margin:0px 0px 2px 0px;
+	background-color:#f9f5f5;
+	x-overflow:hidden;
+	y-overflow:auto;
+	}
+#container{
+    max-width:640px;
+	margin:0px auto;
+	min-height:100%;	
+	y-overflow:auto;		
+	}
+#top_header{
+    height:240px;	
+	text-align:center;
+	background:url(../images/banner.png) no-repeat;		
+	}
+#banner{    
+	padding:34px 0px; 	
+	font-size:27px;
+	letter-spacing:2px;	
+	min-width:350px;
+	color:#fff;	
+	font-weight:bold;	
+	margin:auto;
+	
+	}
+#banner div{
+    margin:5px 0px;
+	}
+.div_2 img{width:5%;}	
+.div_2 span{font-size:24px;letter-spacing:0px;font-weight:normal;}	
+.div_3{font-size:19px;font-weight:normal;}	
+#t_footer{ 	
+	margin:21px auto;
+	width:209px;
+	}
+#t_footer a{
+	text-decoration:none;	
+	font-size:15px;
+	width:50px;
+	padding-left:13px;	
+	display:block;
+	}	
+#t_footer div{
+    float:left;	
+	}
+.login a{
+	background:url(../images/login.png) no-repeat 7px;
+	color:#fff;
+	}
+.login a:hover{
+    background:url(../images/login_1.png) no-repeat 7px;	
+	color:#06f;
+	}	
+.reg a{
+	background:url(../images/reg.png) no-repeat 7px;
+	color:#fff;
+	}
+.reg a:hover{
+    background:url(../images/reg_1.png) no-repeat 7px;	
+	color:#06f;	
+	}	
+.gwc a{
+    background:url(../images/gwc.png) no-repeat 7px;
+	color:#fff;	
+	}
+.gwc a:hover{
+    background:url(../images/gwc_1.png) no-repeat 7px;	
+	color:#06f;	
+	}			
+#navigation{
+    border:1px solid #06f;background:#fff;
+	width:170px;
+	height:300px;
+	bottom:80px;
+	left:23px;
+	position:fixed;
+	}
+#navigation_top{
+	width:145px;margin:8px auto;text-align:left;
+	}
+#navigation_top img{width:18px;vertical-align:middle;}
+.navi_span1{margin-left:17px;}
+#navigation_top a{
+    text-decoration:none;
+	font-size:12px;	
+	color:#06f;
+	}
+
+#navigation_top a span{
+	font-size:14px;
+	line-height:35px;
+	}						
+#globallink{
+    background:#FFFFFF;
+    border-radius: 50px;
+    bottom: 65px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+    height: 50px;
+    left: 15px;    
+    padding: 0;
+	margin:0px;
+    position: fixed;
+    text-align: center;  
+    width: 50px;
+	}
+#globallink1{
+    width:40px;
+	height:40px;
+	background:#06f;
+	border-radius:50px;
+	margin:4px auto;
+	border:1px solid #257BB6;		
+	}
+#globallink2{
+    background:url(../images/globallink.png) no-repeat 4px 8px;
+	height:35px;
+	}
+/*购车支持开始*/	
+#gouche{
+	margin:9px auto;
+    border:1px solid #ccc;
+ 	height:160px;
+	border-radius:6px 6px 0px 0px;
+	}
+#g_div1{
+    background:#66b0dd;
+	border-radius:6px 6px 0px 0px;
+	height:40px;	
+	}
+#g_div2{text-align:center;vertical-align:middle;}	
+#g_div2 img{
+    width:400px;	
+	}
+.gczc{
+    font-size:17px;	
+	color:#fff;
+	width:100px;
+	padding:7px 0px 0px 15px;
+	}
+.more{
+    width:50px;
+	height:19px;
+	text-align:center;
+	background:#e8e8e8;
+	padding-top:2px;
+	border-radius:15px;
+	float:right;
+	margin:-20px 20px 0px 0px;
+	}	
+.more a{
+	color:#06f;
+    text-decoration:none;
+    font-size:12px;
+	}		
+/*购车支持结束*/
+/*预约保养开始*/
+#yuyue{
+	margin:9px auto;
+    border:1px solid #ccc; 	
+	border-radius:6px 6px 0px 0px;
+	}
+#y_1{
+	height:40px;color:#666;border-bottom:1px dashed #ccc;text-align:center;
+	}
+#y_1 span{display:block;padding:8px;color:#737373;font-weight:bold;}
+#y_2{height:25px;padding-top:5px;}	
+.x1{
+    color:#f00;margin:0px 7px 0px 10px;	vertical-align:middle;
+	}
+.x2{
+    color:#666;	
+	}	
+#y_3{
+    height:40px;text-align:center;border-bottom:1px dashed #ccc;
+	}
+#y_3 input{width:90%;height:24px;border:1px solid #dedede;background:#fafafa;}
+#y_3 input:hover{border:1px solid #66b0dd;box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);}
+#y_4{text-align:center;height:40px;}
+#y_4 img{
+    width:75px;margin-top:7px;	
+	}
+#l_1{text-align:center;margin-top:15px;}
+.l_1_span1 img{width:20px;}
+.l_1_span2{color:#66b0dd;font-size:16px;margin-left:5px;}
+#l_div{margin-top:8px;}	
+#l_div input{width:90%;height:26px;border:1px solid #dedede;background:#fafafa;color:#d2d2d2;padding-left:6px;font-size:14px;}	
+#l_div input:hover{border:1px solid #66b0dd;box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);}
+#l_div textarea{margin-top:8px;width:90%;height:100px;border:1px solid #dedede;background:#fafafa;color:#d2d2d2;padding-left:6px;font-size:14px;}
+#l_1_footer{margin-top:8px;margin-left:10px;}
+.l_1_footer1_top{background:#ececec;height:60px;width:98.8%;}
+.name{text-align:left;margin:10px;width:80px;padding-top:7px;color:#666;}
+.time{float:right;margin-top:-32px;color:#666;margin-right:10px;font-size:12px;}
+.l_1_footer1_top1{}
+.l_1_footer1_top2{clear:both;text-align:left;margin-left:23px;color:#666;width:300px;}
+.l_1_footer1_footer{border:1px solid #ececec;width:98.2%;border-top:none;min-height:80px;}
+.huifu{font-weight:bold;padding-top:9px;padding-left:26px;text-align:left;background:url(../images/gly.png) no-repeat 10px 11px;height:20px;}
+.xq{margin:6px 0px 0px 12px;text-align:left;width:96%;}
+.pager img{width:60px;}
+.pager div{float:left;width:33%;}
+ 
+#footer{
+    margin-top:-7px;			
+	}
+
+#f_2{    
+	background:url(../images/footer.png) repeat-x;
+	text-align:center;
+	color:#666;
+	font-size:13px;border:1px solid #f9f5f5;max-width:640px;width:100%;margin-bottom:58px;
+	}
+#f_2 p{
+    line-height:10px;	
+	}		
+#f_3{
+    height:55px;
+	background:#66b0dd;position:fixed;bottom:0px;max-width:640px;width:100%;z-index:1;
+	}			
+.f_3_div{
+     float:left;text-align:center;margin-top:6px;width:33%;
+	}
+.f_3_div a{text-decoration:none;}	
+.f_miaoshu{
+     font-size:12px;margin-top:4px;color:#fff;	
+	}							
+	

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body{background: #F2F3F2;}
+.zhuce_box{width: 90%;margin: 15px auto; background: #fff;border-radius: 8px;overflow: hidden;padding: 2%;}
+.zhuce_box li{width: 96%;overflow: hidden;clear: both;margin-bottom: 15px;height: 40px;border-radius: 5px;
+	border:1px solid #ccc;padding-top: 15px;}
+.ico,.zhuce_txt{float: left;margin-left: 5px;}
+.ico{width: 20px;height: 20px;margin-top: 5px;}
+.ico img{width: 20px;height: auto;}
+.zhuce_txt{width: 85%;height: 30px;}
+.zhuce_yzm{width: 60%;}
+.zhuce_txt input{width: 100%;margin-left: 5px;height: 28px;border: none;background: none;outline: none;
+	font-size: 15px;color: #666;}
+.zhuce_txt input.phone{width: 100%;}
+.gain{float: right;display: inline-block;margin-right: -2px;}
+.gain button{border:none;outline: none;background: #e6e6e6;height: 55px;margin-top: -15px;}
+
+
+.zhuce_btn{width: 90%;overflow: hidden;margin:15px auto;}
+.zhuce_btn button{display: inline-block;width: 120px;padding: 10px 0;text-align: center;outline: none;
+	border-radius: 5px; border: none;font-size: 16px;color: #fff;}
+.zhuce_btn button:nth-of-type(1){background: #D7D9DB;float: left;}
+.zhuce_btn button:nth-of-type(2){background: #00A0C6;float: right;}

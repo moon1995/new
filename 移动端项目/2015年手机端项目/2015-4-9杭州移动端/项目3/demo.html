@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>公安点餐系统</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header_box">
+			<div class="header">
+				<h3>公安采购预约系统</h3>
+				<div class="yuyue_btn">
+					<a href="javascript:void(0)"><img src="images/yuyue.png" alt=""></a>
+				</div>
+			</div>
+			<div class="classify_box">
+				<p>分类列表</p>
+				<h4>食材价格请以结算价为准</h4>
+			</div>
+			<!-- <div class="hideList"></div> -->
+		</div>
+		<div class="nav_list_leftBox nav_list_leftBox01">
+			<ul class="nav_list">
+				<li><a href="javascript:void(0)">肉类</a></li>
+				<li><a href="javascript:void(0)">蔬菜</a></li>
+				<li><a href="javascript:void(0)">豆制品</a></li>
+				<li><a href="javascript:void(0)">水产品</a></li>
+				<li><a href="javascript:void(0)">海鲜</a></li>
+				<li><a href="javascript:void(0)">其他</a></li>
+			</ul>
+		</div>
+		<div class="nav_list_leftBox yuyue_button">
+			<ul class="nav_list">
+				<li><a href="javascript:void(0)">肉类</a></li>
+				<li><a href="javascript:void(0)">蔬菜</a></li>
+				<li><a href="javascript:void(0)">豆制品</a></li>
+				<li><a href="javascript:void(0)">水产品</a></li>
+				<li><a href="javascript:void(0)">海鲜</a></li>
+				<li><a href="javascript:void(0)">其他</a></li>
+			</ul>
+		</div>
+			<div class="content_rightBox">
+				<ul class="content_list">
+					<li>
+						<div class="goods_img">
+							<img src="images/goods1.png" alt="">
+						</div>
+						<div class="goods_text">
+							<h5 class="img_biaoti">羊排肉</h5>
+							<p class="goods_mon">￥25</p>
+								<div class="count_box">
+									<div class="cut_bg">
+										<div class="cut_line"></div>
+									</div>
+									<div class="count">0</div>
+									<div class="add_bg">
+										<div class="rank"></div>
+										<div class="rank_ver"></div>
+									</div>
+								</div>
+						</div>
+					</li>
+					<h5 class="fl_list">蔬菜</h5>
+					<li>
+						<div class="goods_img">
+							<img src="images/goods2.png" alt="">
+						</div>
+						<div class="goods_text">
+							<h5 class="img_biaoti">五花肉</h5>
+							<p class="goods_mon">￥24</p>
+								<div class="count_box">
+									<div class="cut_bg">
+										<div class="cut_line"></div>
+									</div>
+									<div class="count">0</div>
+									<div class="add_bg">
+										<div class="rank"></div>
+										<div class="rank_ver"></div>
+									</div>
+								</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		<ul class="footer_box">
+			<li class="left_btn">选择：<span class="zongjia">0</span></li>
+			<li class="right_btn"><button>选好了</button></li>
+		</ul>
+		<div class="big_bg">
+			<div class="xq_box">
+				<div class="xq_title">
+					<h2 class="img_tit">秘制烤肉披萨秘制烤肉披萨秘制烤肉披萨秘制烤肉披萨</h2>
+					<p><img src="images/close.png" alt="" width="30" class="close_btn"></p>
+				</div>
+				<div class="xq_img">
+					<img src="images/1.jpg" alt="" class="img_src">
+					<p class="danjia">￥25</p>
+					<div class="dj_btn">
+						<button class="dj_button">确认下单</button>
+						<div class="shop_car">
+							<div class="cut_bg02">
+								<div class="cut_line02"></div>
+							</div>
+							<div class="count02">1</div>
+							<div class="add_bg02">
+								<div class="rank02"></div>
+								<div class="rank_ver02"></div>
+							</div>
+						</div>
+					</div>
+					<p class="introduce">秘制烤肉披萨秘制烤肉披萨秘制烤肉披萨秘制烤肉披萨</p>
+					<input type="hidden" class="hidden" value="">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		function widHei(){
+			var imgWid = $('.goods_img').width();
+			$('.goods_img img').css('height',imgWid);
+		}
+		widHei();
+		window.onresize = widHei;
+	</script>
+</html>

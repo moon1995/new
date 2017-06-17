@@ -1,0 +1,8 @@
+@charset "utf-8";
+.header h1{font-size: 18px;color: #949494;}
+
+.user_box{width: 100%;overflow: hidden;margin-bottom: 10px;}
+.user_icoBox{float: left;}
+.user_txt{float: left;margin-left: 20px;font-size: 16px;color: #949494}
+.user_phone{font-size: 14px;padding-top: 10px;}
+.ewm_box{clear: both;}

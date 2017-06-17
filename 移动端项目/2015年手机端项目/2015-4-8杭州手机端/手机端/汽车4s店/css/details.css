@@ -1,0 +1,17 @@
+/* CSS Document */
+.description{color:#666;font-size:14px;line-height:34px;padding:0px 12px;}
+.description1{color:#666;font-size:14px;line-height:39px;padding:0px 12px;}
+.carName{color:#06f;}
+.price{color:#900;font-size:17px;font-weight:bold;}
+.km{border:1px solid #ccc;padding:2px 5px;margin-left:6px;font-size:13px;}
+.package{border:1px solid #CECED0;padding:2px 5px;margin-left:6px;font-size:13px;}
+.number{position:relative;top:9px;width:27px;}
+.minus{position:absolute;margin-left:-18px;font-size:22px;font-weight:bold;}
+.inp{color:#ccc;height:21px;width:37px;}
+.add{position:absolute;margin-left:-20px;font-size:20px;font-weight:bold;}
+.detail{color:#fff;font-size:16px;font-weight:bold;border: 1px solid #FFFFFF;border-radius: 4px;background:#a4b7c3;margin-top:20px;width:83%;height:32px;}
+.buy{color:#fff;font-size:16px;font-weight:bold;border: 1px solid #FFFFFF;border-radius: 4px;background:#66b0dd;margin-top:20px;width:83%;height:32px;}
+.pageSelect{height:45px;margin:30px auto 0px auto;width:76%;}
+.top{position:absolute;margin-left:-46px;margin-top:2px;}
+.bottom{position:absolute;margin-left:-56px;margin-top:3px;}
+.arrow{width:64px;position:relative;}

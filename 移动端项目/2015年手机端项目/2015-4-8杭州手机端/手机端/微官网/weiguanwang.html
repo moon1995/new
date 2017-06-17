@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微官网</title>
+  <style>
+    body{padding:0px;margin:0px auto; text-align:center;font-size:12px;font-family:'微软雅黑',Arial, Helvetica, sans-serif;background:#fff;}
+	.top{width:100%;}
+	.main{width:98%;margin:0px auto;}	
+	.bigmod{float:left;width:49.2%;margin:1.2% auto;}	
+	.mod{width:100%;}
+	.mod div{width:49%;position:relative;}
+	.modular1{float:left;background:#3eb7ee;}
+	.modular2{float:right;background:#6eb943;}	
+	.modular3{float:left;background:#f48221;}
+	.modular4{float:right;background:#ef5972;}
+	.second_line{clear:both;}
+	.second_line_left{float:left;width:49.2%;}
+	.second_line_right{float:right;width:49.2%;}
+	.main span{position:absolute;display:block;width:98%;margin-top:30%;color:#fff;}
+	.button{float:right;width:15%;margin:-17% 3% 0 0;}
+	.footer{color:#666;font-size:11px;}
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="top">
+      <img src="images/banner.jpg" style="width:100%;">
+    </div>
+    <div class="main">
+      <div>
+        <div class="bigmod">
+          <div class="mod">
+            <div class="modular1"><span>室内装修</span><img src="images/back.png" style="width:100%;"></div>
+            <div class="modular2"><span>图文设计</span><img src="images/back.png" style="width:100%;"></div> 
+          </div>
+          <div class="mod" style="clear:both;padding-top:1.8%;">
+            <div class="modular3"><span>展览设计</span><img src="images/back.png" style="width:100%;"></div>
+            <div class="modular4"><span>公共建筑</span><img src="images/back.png" style="width:100%;"></div>
+          </div>
+        </div> 
+        <div class="bigmod" style="float:right;"><img src="images/pic1.jpg" style="width:100%;"></div>
+      </div>
+      <div class="second_line">
+        <div class="bigmod"><img src="images/pic2.jpg" style="width:100%;"></div>
+        <div class="bigmod" style="float:right;"><img src="images/pic3.jpg" style="width:100%;"></div>
+      </div>
+      
+    </div>
+    <div class="button">
+      <img src="images/button.png" style="width:100%;">
+<script> 
+ $(document).ready(function() {
+     var spanText=["* 广州农商银行发起成立金","* 广州农商银行发起成立公益基金","* 广州农商银行发起成立的慈善公益基金","* 广州农商银行发起成立金","* 广州农商银行发起成立公益基金","* 广州农商银行发起成立的慈善公益基金","* 广州农商银行发起成立的慈善公益基金"];
+	 var str="";
+	 for(var i=0;i<spanText.length;i++){
+		 str+="<li>"+spanText[i]+"</li>";		
+		 }
+		 $(".ul1").append(str);
+	}
+ );
+</script>
+     
+    </div>
+    <div class="footer">ZHEJIANGJINGTOO Science & Technology Co.,Ltd</div>
+  </div>
+</body>
+</html>

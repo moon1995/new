@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>个人中心</title> 
+<link href="index.css" type="text/css" rel="stylesheet">
+
+
+
+<style type="text/css">
+	*{
+    margin:0px;
+	padding:0px;
+
+	}
+	.shippingAddress_style{
+		margin:60px auto 10px auto;
+		text-align: center;
+		width: 70%;
+		padding: 3% 0%;
+		color: #fff;
+	}
+	div #banner_top{
+	text-align:center;	
+	}
+div #banner_top img{
+    width:100%;	
+	}		
+div #banner{
+	position:absolute;
+    /*background:url(../) no-repeat;*/
+	width:100%;
+	}
+div #banner a{
+    color:#fff;
+	font-weight:bold;	
+	}
+	.myclassTest{
+		background: #fff;
+		border-right: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+		border-bottom: none;
+		border-left: 1px solid #ccc;
+	}
+	.mytdbottomTest{
+		border-bottom:1px solid #ccc;
+	}
+	#showPersonORder{
+		background-color:#fff;
+	}
+
+.left_div{
+	width:30%;
+	float: left;
+}
+.left_div img{
+	width: 60%;
+	margin-top: 15%;
+	margin-left: 30%;
+	border-radius:500px;
+}
+.right_div{
+	width:70%;
+	float: left;
+	margin-top:1%;
+}
+.top_div,.content_div,.bottom_div{
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+	margin-top: 1%;
+	margin-left: 4%;
+}
+.content_div img{
+	width: 16px;
+	height: 16px;
+}
+.bottom_div img{
+	width: 32px;
+	height: 32px;
+}
+.enshrine_a{
+	padding-left: 10%;
+	
+}
+.integral_div{
+	float: left;
+}
+.coupon_div{
+	position:absolute;
+	float: left;
+	right: 20px;
+}
+.orderStateTable{
+	padding:3px;
+}
+.orderStateTable tr th{
+	border-left:1px solid #fff;
+	width:20%;
+	text-align:center;
+}
+
+
+.top_span{
+	font-size:12px;
+	color:#fff;
+	text-shadow:none;
+	position:relative;
+}
+#banner_top{
+	position:relative;top:-73px;
+}
+.topImg{
+	height:70px;width:100%;position:absolute;background:black; filter:alpha(opacity:50);opacity:0.5;
+}
+.orderStateTable{
+	width:100%;position:absolute;height:70px;width:100%;
+}
+.tableImage{
+	max-width:49px;
+}
+.bag{
+	padding-right: 9px;
+padding-left: 9px;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+border-radius: 9px;
+display: inline-block;
+padding: 2px 4px;
+font-size: 11.844px;
+font-weight: bold;
+line-height: 14px;
+color: #fff;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+white-space: nowrap;
+vertical-align: baseline;
+background-color: #999;
+}
+.myTh{
+	background-color: #ccc;
+}
+</style>
+</head>
+<body><div class="" style="display: none; position: absolute;"><div class="aui_outer"><table class="aui_border"><tbody><tr><td class="aui_nw"></td><td class="aui_n"></td><td class="aui_ne"></td></tr><tr><td class="aui_w"></td><td class="aui_c"><div class="aui_inner"><table class="aui_dialog"><tbody><tr><td colspan="2" class="aui_header"><div class="aui_titleBar"><div class="aui_title" style="cursor: move;"></div><a class="aui_close" href="javascript:/*artDialog*/;">×</a></div></td></tr><tr><td class="aui_icon" style="display: none;"><div class="aui_iconBg" style="background: none;"></div></td><td class="aui_main" style="width: auto; height: auto;"><div class="aui_content" style="padding: 20px 25px;"></div></td></tr><tr><td colspan="2" class="aui_footer"><div class="aui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="aui_e"></td></tr><tr><td class="aui_sw"></td><td class="aui_s"></td><td class="aui_se" style="cursor: se-resize;"></td></tr></tbody></table></div></div>
+	<div id="main" style="height: 567px; background-color: rgb(240, 240, 240);">
+		
+    	<div id="content">
+			<!--头 -->
+				<div id="banner" style="z-index:100">
+					<div>
+						<div class="left_div">
+							
+								
+									<img src="images/avatar-160.png" onerror="this.src=&#39;/wxPhone1.0/public/images/personCenterImages/avatar-160.png&#39;">
+								
+								
+							
+						</div>
+						<div class="right_div">
+							<div class="top_div">　　</div>
+							<div class="content_div" style="font-size:15px;">
+								nn
+							</div> 
+							<div class="bottom_div">
+								<div class="integral_div" style="font-size:15px;">会员积分：1000</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div style="position:relative;">
+					<img id="showImg" style="width:100%" src="images/customPerson_bg.jpg">
+					<!-- <div style="width:40px;height:20px;position:absolute;bottom:80px;right:10px;font-size:15px;color:#FCD209;">注销</a></div> -->
+				</div>
+				<div id="banner_top" style=""><!--<img src="customPerson_bg.jpg">-->
+					<div style="position:relative;">
+						
+						<div class="topImg">
+						</div>
+						<table class="orderStateTable">
+							<tbody><tr>
+								<th style="border-left:none;" onclick="goUrlOrderTodo(&#39;/wxPhone1.0/mobile/microMall/mobilePersonCenterAction!personCenterOrder.cgi?orderState=1&#39;,this)">
+									<img style="width:70%;" src="images/daifukuan.png" class="tableImage">
+									<br>
+									<span class="top_span" style="font-size:12px;">待付款
+										
+											<span class="bag" style="position:absolute;left:20px;z-index:999;top:-40px;background-color: #ff7400;">2</span>
+										
+									</span>
+								</th>
+								<th onclick="goUrlOrderTodo(&#39;/wxPhone1.0/mobile/microMall/mobilePersonCenterAction!personCenterOrder.cgi?orderState=2&#39;,this)">
+									<img style="width:70%;max-height:70px" class="tableImage" src="images/daifahuo.png"><br>
+									<span class="top_span">待发货
+										
+									</span>
+								</th>
+								<th onclick="goUrlOrderTodo(&#39;/wxPhone1.0/mobile/microMall/mobilePersonCenterAction!personCenterOrder.cgi?orderState=3&#39;,this)">
+									<img style="width:70%;max-height:70px" class="tableImage" src="images/daishouhuo.png"><br>
+									<span class="top_span">待收货
+										
+									</span>
+								</th>
+								<th onclick="goUrlOrderTodo(&#39;/wxPhone1.0/mobile/microMall/mobilePersonCenterAction!personCenterOrder.cgi?orderState=4&#39;,this)">
+									<img style="width:70%;max-height:70px" class="tableImage" src="images/daipingjia.png"><br>
+									<span class="top_span">已完成<!-- <span class="bag" style="position:absolute;left:20px;z-index:999;top:-40px;background-color: #ff7400;">6</span> --></span>
+								</th>
+								<th style="border-right:none;" onclick="alert(&#39;尚未开放&#39;)">
+									<img style="width:70%;max-height:70px" class="tableImage" src="images/tuikuan.png"><br>
+									<span class="top_span">退款中<span>
+								</span></span></th>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				
+				<!--下面的东西-->
+				<div style="background-color:#f0f0f0;" id="bottom_div">
+					<div id="bottom_table">
+						<table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#fff;padding:5px;" onclick="goUrl(&#39;/wxPhone1.0/mobile/microMall/mobileShippingAddressAction!shippingAddress.cgi&#39;)">
+							<tbody><tr>
+								<td style="width:90%;height:40px;background: url(&#39;/wxPhone1.0/public/images/personCenterImages/dizhi.png&#39;) no-repeat 0px 8px ;background-size:17px 24px;"> 
+									<span style="font-size:15px;margin-left:25px;color:#000;">我的收货地址<span>
+								</span></span></td>
+								<td style="width:10%"><img style="width:11px;height:16px;" src="images/jiantou.png"></td>
+							</tr>
+						</tbody></table>
+						<table cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;width:100%;background-color:#fff;padding:5px;" onclick="goUrl(&#39;/wxPhone1.0/mobile/microMall/mobileEnshrineAction!enshrineGoodsList.cgi&#39;)">
+							
+							<tbody><tr>
+								<td style="width:90%;height:40px;background: url(&#39;/wxPhone1.0/public/images/personCenterImages/02.png&#39;) no-repeat 0px 8px ;background-size:17px 24px;"> 
+									<span style="font-size:15px;margin-left:25px;color:#000;">宝贝收藏<span>
+								</span></span></td>
+								<td style="width:10%"><img style="width:11px;height:16px;" src="images/jiantou.png"></td>
+							</tr>
+						</tbody></table>
+						<table cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;width:100%;background-color:#fff;padding:5px;" onclick="goUrl(&#39;/wxPhone1.0/mobile/microMall/activityAction!personCoupon.cgi&#39;)">
+							
+							<tbody><tr>
+								<td style="width:90%;height:40px;background: url(&#39;/wxPhone1.0/public/images/personCenterImages/yhq.png&#39;) no-repeat 0px 8px ;background-size:17px 24px;"> 
+									<span style="font-size:15px;margin-left:25px;color:#000;">我的优惠券<span>
+								</span></span></td>
+								<td style="width:10%"><img style="width:11px;height:16px;" src="images/jiantou.png"></td>
+							</tr>
+						</tbody></table>
+					</div>
+					
+					<div style="height:50px;"></div>
+					
+					
+				</div>
+				
+       	</div>
+   </div>  
+    <div class="footer">
+     <ul>
+       <li><span class="spantop"><img src="images/1.png"></span><span class="spanbot">首页</span></li>
+       <li><span class="spantop"><img src="images/2.png"></span><span class="spanbot">购物车</span></li>
+       <li><span class="spantop"><img src="images/3.png"></span><span class="spanbot">我</span></li>
+       <li><span class="spantop"><img src="images/4.png"></span><span class="spanbot">分类</span></li>
+       <li><span class="spantop"><img src="images/5.png"></span><span class="spanbot">更多</span></li>
+     </ul>
+    </div>
+		<div style="height: 50px;"></div>
+<div class="footer">
+	
+</div>
+	</div>
+    
+
+</body></html>

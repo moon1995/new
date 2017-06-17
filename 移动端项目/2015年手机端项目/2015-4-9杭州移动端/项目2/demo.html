@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />    
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>响应式布局</title>
+	<style>
+			/*
+				1、可以在样式中加载文件
+				@import url("tinyScreen.css") screen and (max-device-width: 400px);
+				2、同一个CSS文件中，也可以根据不同的屏幕分辨率，选择应用不同的CSS规则
+				@media screen and (max-width: 400px) {
+				　　.column {
+				　　　　float: none;
+				　　　　width:auto;
+				　　}
+				　　#sidebar {
+				　　　　display:none;
+				　　}
+				}
+			*/
+		body{font: normal 100% Helvetica, Arial, sans-serif;/*即16px*/}
+		body,ul,ol,li,p,h1,h2,h3{margin: 0px;padding:0px;}
+		ol,ul,li{list-style: none;}
+		a:link,a:visited{color: #333;text-decoration: none;}
+		img{border: none;vertical-align: middle;}
+	</style>
+	<link rel="stylesheet" href="css/base.css">
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+</head>
+<body>
+	<div class="top_nav">
+		<ul class="top">
+			<li class="return"><a href="#"><img src="images/return.png"></a></li>
+			<li class="tit_text"><a href="#">全民购物</a></li>
+			<li class="setting"><a href="#"><img src="images/setting.png"></a></li>
+		</ul>
+	</div>
+	<div class="line_block"></div>
+	<header>
+		<img src="images/logo.png">
+	</header>
+	<div class="search">
+		<div class="search_ico">
+			<img src="images/sousuo.png">
+		</div>
+		<div class="search_text">
+			<input type="text" value="搜索商品">
+		</div>
+		<div class="search_ewm">
+			<img src="images/go_search.png">
+		</div>
+	</div>
+	<nav>
+		<li><a href="javascript:void(0)"><img src="images/nav1.png"><p>用户</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav2.png"><p>消息</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav3.png"><p>文件</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav4.png"><p>图片</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav5.png"><p>音乐</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav6.png"><p>附近</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav7.png"><p>分类</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav8.png"><p>更多</p></a></li>
+	</nav>
+	<h2 class="title gril">魅力女装</h2>
+	<ul class="brand_list">
+		<li><a href="#"><img src="images/brand1.png"></a></li>
+		<li><a href="#"><img src="images/brand2.png"></a></li>
+		<li><a href="#"><img src="images/brand3.png"></a></li>
+		<li><a href="#"><img src="images/brand4.png"></a></li>
+		<li><a href="#"><img src="images/brand5.png"></a></li>
+		<li><a href="#"><img src="images/brand6.png"></a></li>
+		<li><a href="#"><img src="images/brand7.png"></a></li>
+		<li><a href="#"><img src="images/brand8.png"></a></li>
+		<li><a href="#"><img src="images/brand9.png"></a></li>
+		<li><a href="#"><img src="images/brand10.png"></a></li>
+	</ul>
+	<h2 class="title gril">魅力女装</h2>
+	 <div class="large_bg" id="large_bg"></div>
+	<ul class="bottom_list_box">
+		<li><a href="javascript:void(0)"><img src="images/nav1.png"><p>用户</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav1.png"><p>用户</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav1.png"><p>用户</p></a></li>
+		<li><a href="javascript:void(0)"><img src="images/nav1.png"><p>用户</p></a></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	//遮罩层
+	function docHeis(){
+		var docWid = $(document).width();
+		var docHei = $(document).height();
+		$(".large_bg").css('height',docHei);
+	}
+	docHeis();
+</script>
+</html>

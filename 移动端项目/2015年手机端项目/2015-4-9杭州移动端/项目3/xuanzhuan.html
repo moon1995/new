@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>公安点餐系统</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<style type="text/css">
+		.nav_listBtn_add{transition-duration:.5s;-webkit-transform:rotate(270deg);}
+		.nav_listBtn_short{transition-duration:.5s;-webkit-transform:rotate(0deg);}
+	</style>
+</head>
+<body>
+	<div class="list_nav_button">
+		<img src="images/list_nav.png" alt="" id="nav_listBtn" width="20">
+	</div>
+</body>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav_listBtn').click(function(){
+				var srcVal = $(this).attr('src');
+				if(srcVal=='images/list_nav.png'){
+					$(this).removeClass().addClass('nav_listBtn_add').attr('src','images/shousuo.png')
+				}else{
+					$(this).removeClass().addClass('nav_listBtn_short').attr('src','images/list_nav.png')
+				}
+			})
+		})
+	</script>
+</html>

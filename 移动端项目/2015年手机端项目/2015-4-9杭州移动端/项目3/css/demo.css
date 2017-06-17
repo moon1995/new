@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*header*/
+body,html{position: relative;min-width: 320px;max-height: 820px;margin: 0 auto;}
+body{background:#fff;}
+.container{position: relative;}
+.header_box{position: fixed;top:0;z-index: 1000;width: 100%;max-width:820px;}
+
+.header{padding: 10px 0;border-bottom: 1px solid #ccc;overflow: hidden;background: #fff;}
+.header h3{float: left; margin-left: 15px;font-size: 18px;color:#525252;padding-top: 5px;}
+.yuyue_btn{float: right;margin-right: 15px;padding: 5px 0;}
+.yuyue_btn a{display: block;padding-left:20px;border-left: 1px solid #ccc;outline: none;}
+.yuyue_btn img{width: 90px;}
+
+
+
+/*nav button*/
+.classify_box{width: 100%;border-bottom:1px solid #ccc;overflow: hidden;}
+.classify_box p{width: 34%;float: left;text-align: center;cursor: pointer;padding: 5px 0;background: #F2F3F2;}
+.classify_box h4{padding: 5px 5%;background: #9b9b9b;color: #fff;float: left;width: 56%;}
+
+
+/*left*/
+.nav_list_leftBox{width: 34%;position: fixed;top:84px;background: #F2F3F2;border-right: 1px solid #ccc;
+	display: none;z-index: 999;min-height: 100%;max-width: 278px;}
+.nav_list_leftBox ul{width: 100%;}
+.nav_list_leftBox ul li{width: 90%;margin: 10px 5%;border-radius: 5px;overflow: hidden;}
+.nav_list_leftBox ul li a{font-size: 14px;display: block;padding: 5px 0px 5px 15px;}
+.nav_list_leftBox ul li a:hover{background: #939393;color: #fff;}
+	/*left  add*/
+a.nav_list_add:link,a.nav_list_add:visited{background: #939393;color: #fff}
+
+.yuyue_button{border: none;border-left: 1px solid #ccc;z-index: 30000;width: 125px;right: 0;
+	top:54px;position: absolute;min-height: 50px;}
+
+
+/*right*/
+.content_rightBox{width: 100%;padding: 85px 0 60px 0;}
+.content_list{width: 95%;margin: 0 2%;overflow: hidden;}
+.content_list li{overflow: hidden;padding: 10px 0;border-bottom: 1px solid #ccc;width: 100%;position: relative;}
+.goods_img{float: left;width: 30%;margin-left: 2%;}
+.goods_img img{width: 100%;}
+.goods_text{float: left;width: 62%;margin-left: 5%;}
+.goods_text h5{font-size: 16px;color: #525252;padding-top:5px;}
+.goods_text p{font-size: 14px;padding-top: 15px;color: #b72721}
+h5.fl_list{width:100%;padding: 5px 0;padding-left: 3%; background: #D3D1D1;font-size: 16px;font-weight: normal;}
+h5.fl_list_add{width: 62%;padding-left: 38%;}
+/*add*/
+.count_box{position: absolute;right:0;bottom: 5px;overflow: hidden;z-index:999;}
+.add_bg,.cut_bg,.add_bg02,.cut_bg02{width: 30px;height: 30px;border:2px solid #A8A8A8;border-radius: 50px;}
+.rank,.cut_line,.rank02,.cut_line02{width: 14px;height:2px;margin:14px 0 13px 8px;background: #a8a8a8;}
+.cut_line,.cut_line02{background: #B82923;}
+.rank_ver,.rank_ver02{width: 2px;height:14px;background: #a8a8a8;margin: -21px 0 0 14px;}
+.add_bg,.cut_bg,.count,.add_bg02,.cut_bg02,.count02{float: left;}
+.count,.count02{margin: 6px;font-size: 14px;}
+
+.rank02,.rank_ver02{background: #B82923;}
+.shop_car{display: none;}
+
+.count,.cut_bg{display: none;}
+
+/*button*/
+.footer_box{width: 100%;max-width: 820px;position: fixed;bottom: 0px;padding: 5px 0;background: #5B5B5B;
+	z-index: 1000;}
+.left_btn{float: left;margin-left: 15px;font-size: 16px;color: #fff;padding-top: 6px;}
+.right_btn{float: right;margin-right: 15px;}
+.right_btn button{width: 80px;padding: 6px 0;font-size: 16px;color: #fff;background: #FE6071;
+	border-radius:5px;border:none;outline: none;}
+
+/*菜单详情*/
+.big_bg{width: 100%;height: 100%;opacity: 1;position: fixed; left: 0;top:0;z-index: 1100;display: none;
+	background: url(../images/bg.png);}
+.xq_box{width: 90%;margin:auto;background: #fff;border-radius: 8px;overflow: hidden;margin-top: 30px;
+	max-width: 698px;}
+	/*title*/
+.xq_title{overflow: hidden;}
+.xq_title h2{width: 80%;text-align: center;font-weight: normal;font-size: 16px;float: left;
+	margin-left: 5%;padding-top: 10px;}
+.xq_title p{float: right;margin-right: 0;}
+
+.xq_img{width: 90%;margin: 2% 5%;clear: both;height: 100%}
+.xq_img img{width: 100%;height: 45%;}
+
+.danjia{float: left;font-size: 16px;color: #b72721;margin-left: 10px;margin-top: 15px;}
+.dj_btn{float: right;margin: 15px 10px 15px 0;}
+.dj_btn button{padding: 7px 10px;background: #b72721;border:none;border-radius: 5px;cursor: pointer;
+	font-size: 14px;color: #fff;outline: none;}
+.introduce{clear: both;margin-top: 10px;text-indent: 2em;color: #666;font-size: 14px;min-height: 60px;}
+
+
