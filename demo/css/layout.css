@@ -1,0 +1,47 @@
+@charset "utf-8";
+/** 通用 **/
+body { background: #f6f6f6; margin: 0 auto; color: #333; line-height: 1.5; font-size: 14px; font-family: 'Microsoft YaHei', 微软雅黑, Arial, Tahoma; }
+a { color: #c3a066 }
+a:hover { text-decoration: underline }
+/********** 结构框架 ************/
+#header, #main, #container { width: 640px; }
+#header { position: fixed; height: 145px; top: 0; z-index: 20; }
+.headtop { background: #00a8b1; color: #c4ffff; font-size: 32px; font-weight: bold; text-align: center; height: 80px; line-height: 80px; }
+.nav { height: 60px; }
+.nav ul li { float: left; width: 320px; line-height: 60px; font-size: 25px; font-weight: bold; border-bottom: 5px solid #ccc; background: #e4e4e4; }
+.nav ul li.line { border-right: 1px solid #ccc; width: 319px }
+.nav ul li a { display: block; text-align: center; height: 60px; text-decoration: none; color: #000; }
+.nav ul li.on { border-bottom: 5px solid #00a8b1; }
+.nav ul li.on a { color: #00a8b1; }
+/*主体内容*/
+#main { margin-top: 145px }
+/** 图片 **/
+.swipe { width: 640px; height: 254px; overflow: hidden; position: relative; margin: 0 auto 0px auto; }
+.swipe ul { -webkit-transition: left 800ms ease-in 0; -moz-transition: left 800ms ease-in 0; -o-transition: left 800ms ease-in 0; -ms-transition: left 800ms ease-in 0; transition: left 800ms ease-in 0; }
+.swipe #pagenavi { position: absolute; left: 0; bottom: 10px; text-align: center; width: 100%; }
+.swipe #pagenavi a { width: 14px; height: 14px; line-height: 99em; background: #b5b5b5; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; margin: 0 4px; overflow: hidden; cursor: pointer; display: inline-block; }
+.swipe #pagenavi a.active { background: #209da0; }
+/*小图*/
+.box {  height: 213px; }
+.box li { float: left; }
+/*下方*/
+/*======================== tips ===========================*/
+.tips { padding-top: 20px; }
+.tips ul li { position: relative; border-bottom: 1px solid #ccc; height: 140px; padding: 10px }
+.tips .icon { float: left; padding: 3px 10px 0 0; }
+.tips h3 { margin: 0; padding: 0 80px 2px; font-size: 35px; }
+.tips .star { padding: 3px 80px 2px; }
+.tips p { padding: 3px 80px 2px; }
+.tips a.download { position: absolute; top: 50px; right: 15px; font-size: 25px; color: #fff; width: 150px; height: 60px; line-height: 60px; text-align: center; cursor: pointer; background-color: #02b9c5; }
+.moredown { background: #00a8b1; }
+.moredown a { color: #c4ffff; font-size: 20px; font-weight: bold; text-align: center; display: block; height: 60px; line-height: 60px; }
+/*主体部分*/
+#container { margin-top: 145px; padding-top: 20px; }
+#container ul { }
+#container ul li { margin-bottom: 15px; border-bottom: 2px solid #eeeeee; padding: 0 10px 10px 15px; overflow: hidden; zoom: 1; }
+#container ul li img { float: left; display: inline-block; padding-bottom: 5px; width: 190px; height: 110px }
+#container ul li div { /*padding-top:5px;*/ margin-left: 15px; float: left; display: inline; }
+#container ul li div h3 { font-size: 30px; }
+#container ul li div p { padding-top: 3px; font-weight: bold; color: #999; font-size: 20px; }
+#container ul li div a { color: #333 }
+#container ul li div span { padding-top: 10px; font-weight: bold; color: #c4c4c4; display: inline-block; }
