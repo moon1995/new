@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>订单核销</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/dingdan.css">
+	<link rel="stylesheet" href="css/ddqueren.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var temp = $('.user_phone span').html();
+			var str01 = temp.substring(0,3);
+			var str02 = temp.substring(7,temp.length);
+			var newTemp = str01+'****'+str02;
+			$('.user_phone span').html(newTemp);
+		})	
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>订单确认</h1>
+		</div>
+		<div class="dingdan_content">
+			<div class="user_box">
+				<div class="user_icoBox">
+					<img src="images/goods1.png" alt="" width="60">
+				</div>
+				<div class="user_txt">
+					<p class="user_name">叶古月</p>
+					<p class="user_phone">手机号：<span>18975624589</span></p>
+				</div>
+			</div>
+			<div class="ewm_box">
+				<p>123456789123</p>
+			</div>
+			<h4 class="title">订单详情</h4>
+			<table cellpadding="0" cellspacing="0" border="0" class="tab_list">
+				<tr>
+					<td class="left_name">剁椒里脊套餐（午餐）</td>
+					<td class="right_money">￥28.00</td>
+				</tr>
+				<tr>
+					<td class="left_name">卤鸡爪（午餐）</td>
+					<td class="right_money">￥12.00</td>
+				</tr>
+				<tr>
+					<td class="left_name">红烧肉套餐（晚餐）</td>
+					<td class="right_money">￥50.00</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="zongjia">总价：￥90.00</td>
+				</tr>
+			</table>
+		</div>
+		<div class="return_btn">
+			<button>确 认 订 单</button>
+		</div>
+	</div>
+</body>
+</html>

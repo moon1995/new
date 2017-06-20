@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body,html{width: 100%;height:100%;}
+header{padding: 15px 0;text-align: center;width: 100%}
+body{background: #F2F3F2;}
+.container{position: relative;}
+.content_box{width: 90%;margin: 0 auto 40px;border-radius: 8px;background: #fff;padding: 2%;}
+.content_box table{width: 96%;margin: 10px auto;}
+.content_box table td{}
+.left_name{width: 35%;font-size: 16px;}
+.right_text{width: 62%;border: 1px solid #cfcfcf;border-radius: 5px;}
+.right_text input{width: 95%;height: 30px;outline: none; padding-left: 2%;border: none;background: none;}
+.right_text input.sxyzm{width: 50%;}
+.huoqu{width: 48%;background: #efefef;height: 32px;border-top-right-radius:5px;border: none;display: inline-block;
+	border-bottom-right-radius:5px;text-align: center;font-size: 14px;padding-top: 5px;float: right;outline: none;}
+
+
+.footer_btn{width: 100%;text-align: center;position: fixed;bottom: 0;left: 0;background: #fff;padding: 5px 0;}
+.footer_btn button{width: 100px;padding: 10px 0;font-size: 16px;outline: none;background: #80C269;
+	border: none;border-radius: 5px;color: #fff;}
+.big_bg{width: 100%;height: 100%;background: #000;opacity: 0.7;position: fixed;left: 0;top:0;}
+.success_box{position: absolute;left:15%;top:30%;background: #fff;width:70%;border-radius: 8px;padding:30px 0;
+	}
+.success_img,.success_box p,.success_box h2{text-align: center;}
+.success_box h2{font-size: 24px;padding: 5px 0;}
+.success_box p{font-size: 14px;padding: 5px 0;}
+.success_box p button{width: 120px;padding: 10px 0;font-size: 16px;outline: none;background: #fff;border-radius: 5px;
+	border: 1px solid #ccc;}
+
+.big_bg,.success_box{display: none;}

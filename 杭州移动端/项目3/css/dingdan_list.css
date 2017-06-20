@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body{background:#F2F3F2;}
+
+h1{font-size: 18px;padding:10px 0 10px 2%;background: #9B9B9B;color: #fff}
+.dingdan_box,.dingdan_box li{width: 100%;overflow: hidden;}
+.dingdan_box li{background: #fff;margin-bottom: 15px;padding-bottom: 10px;}
+p.dd_time,p.dd_state{float: left;padding: 10px 0;font-size: 14px;}
+p.dd_time{width: 68%;padding-left: 2%;color: #666}
+p.dd_state{width: 28%;text-align: right;}
+.dd_img_box{margin: 0px 2%;padding: 10px 0;border-top: 1px solid #ccc;width: 96%;overflow: hidden;
+	clear: both;border-bottom: 1px solid #ccc;}
+.dd_img,.dd_txt{float: left;}
+.dd_txt{margin-left: 10px;}
+.dd_txt h3{font-size: 16px;}
+.dd_txt p{font-size: 14px;color: #666;padding-top: 10px;}
+.dd_img_con{width: 70px;}
+.dd_imgMore{float: right;padding-top: 18px;}
+.dd_img_more{width: 25px;}

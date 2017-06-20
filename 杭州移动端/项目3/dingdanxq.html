@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>公安点餐系统</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/dingdanxq.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.checked').click(function(){
+				$(this).toggleClass('checkedAdd');
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<h1>订单信息确认</h1>
+		<div class="dingdan_content">
+			<div class="left_dan">订单详情</div>
+			<ul class="details">
+				<li>
+					<div class="details_txt">
+						<p>家常豆腐套餐<span>（午餐）</span></p>
+						<p>￥28.00</p>
+					</div>
+					<div class="details_cou">
+						<div class="cut_bg">
+							<div class="cut_line"></div>
+						</div>
+						<div class="count">0</div>
+						<div class="add_bg">
+							<div class="rank"></div>
+							<div class="rank_ver"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="details_txt">
+						<p>家常豆腐套餐<span>（午餐）</span></p>
+						<p>￥28.00</p>
+					</div>
+					<div class="details_cou">
+						<div class="cut_bg">
+							<div class="cut_line"></div>
+						</div>
+						<div class="count">0</div>
+						<div class="add_bg">
+							<div class="rank"></div>
+							<div class="rank_ver"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="details_txt">
+						<p>家常豆腐套餐<span>（午餐）</span></p>
+						<p>￥28.00</p>
+					</div>
+					<div class="details_cou">
+						<div class="cut_bg">
+							<div class="cut_line"></div>
+						</div>
+						<div class="count">0</div>
+						<div class="add_bg">
+							<div class="rank"></div>
+							<div class="rank_ver"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="right_dan">总价：￥15.00</div>
+			<div class="checked"></div>
+			<div class="quan">使用午餐券 *1 <span>（午餐券12:50失效）</span></div>
+		</div>
+		<p class="xianzhi">每人最多选择五项，每项最多可以预定三份</p>
+	</div>
+	<div class="footer_bntton">
+		<div class="left_button">
+			<button>继续点菜</button>
+		</div>
+		<div class="right_button">
+			<button>确认下单</button>
+		</div>
+	</div>
+</body>
+</html>
